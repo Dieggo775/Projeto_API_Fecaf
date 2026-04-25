@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <met charset=""UTF-8" />
+        <met name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rick and Morty Explore</title>
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="topo">
+            <h1>Rick and Morty Explore</h1>
+            <p>Personagens carregados em tempo real com JavaScript</p>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>Universo Rick and Morty</h2>
+                <p>
+                    Esta projeto apresenta personagens da serie Rick and Morty usando consumo de API publica, criacao dinamica e organizacao visual com HTML, CSS E JavaScript.
+                </p>
+            </section>
+
+            <section class="personagens">
+                <h2>Personagens</h2>
+                <p class="subtitulo">
+                    Busque e filtre personagens da série Rick and Morty com dados vindos da API pública.
+                </p>
+
+                <form id="form-busca" class="area-busca">
+                    <input
+                    type="text"
+                    id="input-busca"
+                    placeholder="Digite o nome do personagem"/>
+
+                    <select id="filtro-status">
+                        <option value="">Todos os status</option>
+                        <option value="alive">Alive</option>
+                        <option value="dead">Dead</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+
+                    <select id="filtro-genero">
+                        <option value="">Todos os gêneros</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="genderless">Genderless</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+
+                    <button type="submit">Buscar</button>
+                    <button type="button" id="btn-limpar">Limpar</button>
+                </form>
+
+                <div id="cards-container"></div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Projeto academico de Front-End com consumo de API</p>
+        </footer>
+
+        <script src="/js/script.js"></script>
+    </body>
+</html>
