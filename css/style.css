@@ -9,11 +9,6 @@
   src: url('../assets/fonts/get_schwifty.ttf') format('truetype');
 }
 
-.hero h2,
-.personagens h2 {
-  font-family: 'RickMorty', cursive;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(180deg, #0b1120, #111827);
